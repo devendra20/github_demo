@@ -150,7 +150,20 @@ class ProfileScreen extends StatelessWidget {
         title: Text('Profile'),
       ),
       body: Center(
-        child: Text('Profile Screen'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Name: John Doe',
+              style: TextStyle(fontSize: 24.0),
+            ),
+            SizedBox(height: 10),
+            Text(
+              'Email: john.doe@example.com',
+              style: TextStyle(fontSize: 20.0),
+            ),
+          ],
+        ),
       ),
     );
   }
